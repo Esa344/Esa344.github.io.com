@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link rel="stylesheet" href="/.Layout/.CSS/.Navbar/style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div id="nav">
+      <h1>mangaKu</h1>
+      <h4>Masuk</h4>
+      <img src="/drawable/.Navbar/light/menu.png"/>
+    </div>
+  </header>
+  <main id="main-content"/>
+  <footer>
+    <nav>
+      <ul>
+        <li onclick="forum() & loadContent('/page/forum/index.html')">
+        <img src="/drawable/.Navbar/light/forum.png" id="forum">
+        <h3 id="textForum">forum</h3>
+        </li>
+        <li onclick="shop() & loadContent('/page/shop/index.html') ">
+        <img src="/drawable/.Navbar/light/shop.png" id="shop">
+        <h3 id="textShop">Shop</h3>
+        </li>
+        <li onclick="home() & loadContent('/page/home/index.html')">
+          <img src="/drawable/.Navbar/light/home.png" id="home">
+          <h3 id="textHome">Home</h3>
+        </li>
+        <li onclick="troli() & loadContent('/page/troli/index.html')">
+          <img src="/drawable/.Navbar/light/troli.png" id="troli">
+          <h3 id="textTroli">troli</h3>
+        </li>
+        <li onclick="galeri() & loadContent('/page/galeri/index.html')">
+          <img src="/drawable/.Navbar/light/galeri.png" id="galeri">
+          <h3 id="textGaleri">Gallery</h3>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="/.system/layout.js"></script>
+  <script src="/.Layout/.JS/animation.js"></script>
+  <script src="/.Layout/.JS/theme.js"></script>
+  
+</body>
+</html>
