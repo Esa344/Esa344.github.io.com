@@ -73,7 +73,7 @@ div.accr{
   border-radius: 10px;
   margin-right: 5px;
 }
-div.item div.dbutton{
+div.dbutton{
   transform: rotate(45deg);
   height: 6px;
   width: 6px;
@@ -86,13 +86,15 @@ div.item div.dbutton{
 }
 div.subdrop{
   height: auto;
-  width: 90vw;
+  width: 89vw;
   background-color: rgba(133, 133, 133, 0.74);
-  margin-top: -5px;
-  margin-bottom: 5px;
+  margin-top: 0px;
+  margin-bottom: 10px;
   border-radius: 5px;
+  border-top-right-radius: 0px;
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 
 header img{
