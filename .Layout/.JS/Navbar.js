@@ -10,6 +10,12 @@ const textHome = document.getElementById('textHome')
 const textTroli = document.getElementById('textTroli')
 const textGaleri = document.getElementById('textGaleri')
 
+const drobMenu = document.getElementById('drobDown')
+const srcMenu = document.getElementById('src')
+const drobItem = document.getElementById('drobItem')
+const subDrob = document.getElementById('subDrob')
+
+
 let lastItem = animHome
 let lastText = textHome
 let click = 'home'
@@ -107,5 +113,18 @@ function galeri() {
   else{
   }
   click = 'galeri'
+  
+}
+
+function drobDown(){
+  drobMenu.style.paddingBottom='10px'
+  drobMenu.style.paddingTop='5px'
+  drobMenu.style.height='auto'
+  drobMenu.style.width='100vw'
+  src.style.display='block'
+  src.style.height='35px'
+  drobItem.style.display='flex'
+  drobItem.style.height='30px'
+  subDrob.style.display='block'
   
 }

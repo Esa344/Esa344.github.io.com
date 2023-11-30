@@ -13,15 +13,15 @@
     <div id="nav">
       <h1>mangaKu</h1>
       <h4>Masuk</h4>
-      <img src="/drawable/.Navbar/light/menu.png"/>
+      <img src="/drawable/.Navbar/light/menu.png" onclick="drobDown()"/>
     </div>
-      <div class="down">
+      <div class="down" id="drobDown">
         <input type="text" name="" id="src" class="src" placeholder="cari apa nih?…">
-        <div class="item">
+        <div class="item" id="drobItem">
           <div class="accr"/>
           <div class="dbutton"/>
         </div>
-        <div class="subdrop">
+        <div class="subdrop" id="subDrob">
           p
         </div>
       </div>    
@@ -54,7 +54,7 @@
     </nav>
   </footer>
   <script src="/.system/layout.js"></script>
-  <script src="/.Layout/.JS/animation.js"></script>
+  <script src="/.Layout/.JS/Navbar.js"></script>
   <script src="/.Layout/.JS/theme.js"></script>
   
 </body>
