@@ -19,6 +19,7 @@ const subDrob = document.getElementById('subDrob')
 let lastItem = animHome
 let lastText = textHome
 let click = 'home'
+let drobOpen = 1
 
 animHome.style.marginTop = '-15vh'
 animHome.style.padding = '20px 20px 15px 20px'
@@ -117,14 +118,30 @@ function galeri() {
 }
 
 function drobDown(){
+  if (drobOpen != 1) {
+    drobMenu.style.opacity = '0'
+    drobMenu.style.borderTop = 'none'
+    drobMenu.style.borderColor = 'rgba(0,0,0,0)'
+    drobMenu.style.paddingBottom = '0px'
+    drobMenu.style.paddingTop = '0px'
+    drobMenu.style.height = '0px'
+    drobMenu.style.width = '0px'
+    src.style.opacity = '0'
+    drobItem.style.opacity = '0'
+    subDrob.style.opacity = '0'  
+    drobOpen = 0
+  }
+  if (drobOpen != 0){
+  drobMenu.style.opacity='1'
+  drobMenu.style.borderTop='solid'
+  drobMenu.style.borderColor='rgba(255, 255, 255, 0.5)'
   drobMenu.style.paddingBottom='10px'
   drobMenu.style.paddingTop='5px'
   drobMenu.style.height='auto'
   drobMenu.style.width='100vw'
-  src.style.display='block'
-  src.style.height='35px'
-  drobItem.style.display='flex'
-  drobItem.style.height='30px'
-  subDrob.style.display='block'
-  
+  src.style.opacity='1'
+  drobItem.style.opacity='1'
+  subDrob.style.opacity='1'
+  drobOpen = 1
+  }
 }
