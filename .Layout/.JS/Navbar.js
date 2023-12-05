@@ -14,12 +14,13 @@ const drobMenu = document.getElementById('drobDown')
 const srcMenu = document.getElementById('src')
 const drobItem = document.getElementById('drobItem')
 const subDrob = document.getElementById('subDrob')
+const buble = document.getElementById('buble')
 
 
 let lastItem = animHome
 let lastText = textHome
 let click = 'home'
-let drobOpen = 1
+let drobOpen = 0
 
 animHome.style.marginTop = '-15vh'
 animHome.style.padding = '20px 20px 15px 20px'
@@ -118,30 +119,35 @@ function galeri() {
 }
 
 function drobDown(){
-  if (drobOpen != 1) {
-    drobMenu.style.opacity = '0'
+  if (drobOpen == 1) {
+    drobMenu.style.backgroundColor= 'rgba(0,0,0,0)'
+    buble.style.opacity='1'
     drobMenu.style.borderTop = 'none'
     drobMenu.style.borderColor = 'rgba(0,0,0,0)'
     drobMenu.style.paddingBottom = '0px'
     drobMenu.style.paddingTop = '0px'
     drobMenu.style.height = '0px'
-    drobMenu.style.width = '0px'
+    drobMenu.style.marginTop='-70px'
     src.style.opacity = '0'
+    src.style.height = '0px'
     drobItem.style.opacity = '0'
-    subDrob.style.opacity = '0'  
-    drobOpen = 0
+    drobItem.style.opacity = '0px'
+    subDrob.style.display = 'none'    
+    drobOpen -= 1
   }
-  if (drobOpen != 0){
-  drobMenu.style.opacity='1'
+  else {
+  drobMenu.style.backgroundColor='black'
   drobMenu.style.borderTop='solid'
   drobMenu.style.borderColor='rgba(255, 255, 255, 0.5)'
   drobMenu.style.paddingBottom='10px'
   drobMenu.style.paddingTop='5px'
   drobMenu.style.height='auto'
-  drobMenu.style.width='100vw'
+  drobMenu.style.marginTop='0px'
   src.style.opacity='1'
+  src.style.height='30px'
   drobItem.style.opacity='1'
+  drobItem.style.height='30px'
   subDrob.style.opacity='1'
-  drobOpen = 1
+  drobOpen += 1
   }
 }
