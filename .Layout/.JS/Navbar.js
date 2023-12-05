@@ -134,6 +134,7 @@ function drobDown(){
     drobItem.style.opacity = '0px'
     subDrob.style.display = 'none'    
     drobOpen -= 1
+    
   }
   else {
   drobMenu.style.backgroundColor='black'
