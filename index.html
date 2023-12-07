@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,39 +9,49 @@
   <link rel="stylesheet" href="/.Layout/.CSS/.Navbar/style.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
     <div id="nav">
       <h1>mangaK</h1>
       <h4>Masuk</h4>
     </div>
-      <div class="down" id="drobDown">
-        <input type="text" name="" id="src" class="src" placeholder="cari apa nih?…">
-        <div class="item" id="drobItem">
-          <div class="accr"/>
-          <div class="sdbutton"/>
-        </div>
-        <div class="subdrop" id="subDrob">
-        </div>
-        <div class="boxbuble" id="buble">
+    <div class="down" id="drobDown">
+      <input type="text" name="" id="src" class="src" placeholder="cari apa nih?…">
+      <div class="item" id="drobItem">
+        <div class="accr" />
+        <h6>Social media</h6>
+        <div class="sdbutton" onclick="sdbuton()" id="sdbutton" />
+      </div>
+      <div class="subdrop" id="subDrob">
+        <h6 onclick="window.location.href='https://Instagram.com/UserName'">Instagram</h6>
+        <h6 onclick="window.location.href='https://twitter.com/UserName'">Twitter</h6>
+        <h6 onclick="window.location.href='https://Facebook.com/UserName'">Facebook</h6>
+      </div>
+      <div class="item" id="item1" >
+        <div class="accr"/>
+        <h6>theme</h6>
+        <div class="boxSwich" onclick="swich1()"><div class="swichBall" id="switchBall1"/></div>
+      </div>
+      <div class="boxbuble" id="buble">
         <div class="buble" onclick="drobDown()">
-          <div class="dbutton"/>
-        </div>
+          <div class="dbutton" id="dbutton"/>
         </div>
       </div>
+    </div>
 
   </header>
-  <main id="main-content"/>
+  <main id="main-content" />
   <footer>
     <nav>
       <ul>
         <li onclick="forum() & loadContent('/page/forum/index.html')">
-        <img src="/drawable/.Navbar/light/forum.png" id="forum">
-        <h3 id="textForum">forum</h3>
+          <img src="/drawable/.Navbar/light/forum.png" id="forum">
+          <h3 id="textForum">forum</h3>
         </li>
         <li onclick="shop() & loadContent('/page/shop/index.html') ">
-        <img src="/drawable/.Navbar/light/shop.png" id="shop">
-        <h3 id="textShop">Shop</h3>
+          <img src="/drawable/.Navbar/light/shop.png" id="shop">
+          <h3 id="textShop">Shop</h3>
         </li>
         <li onclick="home() & loadContent('/page/home/index.html')">
           <img src="/drawable/.Navbar/light/home.png" id="home">
@@ -61,4 +72,5 @@
   <script src="/.Layout/.JS/Navbar.js"></script>
   <script src="/.Layout/.JS/theme.js"></script>
 </body>
+
 </html>

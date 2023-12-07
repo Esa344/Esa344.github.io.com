@@ -15,12 +15,17 @@ const srcMenu = document.getElementById('src')
 const drobItem = document.getElementById('drobItem')
 const subDrob = document.getElementById('subDrob')
 const buble = document.getElementById('buble')
-
+const dbutton = document.getElementById('dbutton')
+const sdbutton = document.getElementById('sdbutton')
+const item1 = document.getElementById('item1')
+const switchBall1 = document.getElementById('switchBall1')
 
 let lastItem = animHome
 let lastText = textHome
 let click = 'home'
 let drobOpen = 0
+let sdOpen = 0
+let swichTurn1 = 0
 
 animHome.style.marginTop = '-15vh'
 animHome.style.padding = '20px 20px 15px 20px'
@@ -43,6 +48,7 @@ function forum() {
   else{
   }
   click = 'forum'
+  drobDown()
 }
 
 function shop() {
@@ -61,6 +67,7 @@ function shop() {
   else{
   }
   click = 'shop'
+  drobDown()
 }
 
 function home() {
@@ -79,6 +86,7 @@ function home() {
   else{
   }
   click = 'home'
+  drobDown()
 }
 
 function troli() {
@@ -97,6 +105,7 @@ function troli() {
   else{
   }
   click = 'troli'
+  drobDown()
 }
 
 function galeri() {
@@ -115,7 +124,7 @@ function galeri() {
   else{
   }
   click = 'galeri'
-  
+  drobDown()
 }
 
 function drobDown(){
@@ -132,8 +141,15 @@ function drobDown(){
     src.style.height = '0px'
     drobItem.style.opacity = '0'
     drobItem.style.opacity = '0px'
-    subDrob.style.display = 'none'    
+    subDrob.style.display = 'none'
+    dbutton.style.transform = 'rotate(135deg)'
+    sdbutton.style.transform = 'rotate(45deg)'
+    item1.style.opacity='0'
+    item1.style.height='0px'
     drobOpen -= 1
+    if (sdOpen == 1){
+      sdOpen -= 1
+    }
     
   }
   else {
@@ -149,6 +165,37 @@ function drobDown(){
   drobItem.style.opacity='1'
   drobItem.style.height='30px'
   subDrob.style.opacity='1'
+  dbutton.style.transform = 'rotate(315deg)'
+  item1.style.opacity='1'
+  item1.style.height='30px'
   drobOpen += 1
   }
+}
+
+function sdbuton(){
+if (sdOpen == 0) {
+  subDrob.style.display = 'block'
+  sdbutton.style.transform = 'rotate(135deg)' 
+  sdOpen += 1
+} 
+else {
+  subDrob.style.display = 'none'
+  sdbutton.style.transform = 'rotate(45deg)'  
+  sdOpen -= 1
+}
+}
+
+function swich1(){
+if (swichTurn1 == 0) {
+  switchBall1.style.marginLeft = '15px'
+  switchBall1.style.marginRight = '0px'
+  switchBall1.style.backgroundColor = 'blue'
+  swichTurn1 += 1
+} 
+else {
+  switchBall1.style.marginLeft = '0px'
+  switchBall1.style.marginRight = '15px'
+  switchBall1.style.backgroundColor = 'red'  
+  swichTurn1 -= 1
+}
 }
