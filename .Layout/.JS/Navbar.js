@@ -26,6 +26,9 @@ let click = 'home'
 let drobOpen = 0
 let sdOpen = 0
 let swichTurn1 = 0
+let form = 1
+let float = 0
+
 
 animHome.style.marginTop = '-15vh'
 animHome.style.padding = '20px 20px 15px 20px'
@@ -48,7 +51,6 @@ function forum() {
   else{
   }
   click = 'forum'
-  drobDown()
 }
 
 function shop() {
@@ -67,7 +69,6 @@ function shop() {
   else{
   }
   click = 'shop'
-  drobDown()
 }
 
 function home() {
@@ -86,7 +87,6 @@ function home() {
   else{
   }
   click = 'home'
-  drobDown()
 }
 
 function troli() {
@@ -105,7 +105,6 @@ function troli() {
   else{
   }
   click = 'troli'
-  drobDown()
 }
 
 function galeri() {
@@ -124,7 +123,9 @@ function galeri() {
   else{
   }
   click = 'galeri'
-  drobDown()
+  if (drobOpen == 0) {
+    drobDown;
+  }
 }
 
 function drobDown(){
@@ -153,9 +154,9 @@ function drobDown(){
     
   }
   else {
-  drobMenu.style.backgroundColor='black'
+  drobMenu.style.backgroundColor=secondColor
   drobMenu.style.borderTop='solid'
-  drobMenu.style.borderColor='rgba(255, 255, 255, 0.5)'
+  drobMenu.style.borderColor='rgb(255, 255, 255)'
   drobMenu.style.paddingBottom='10px'
   drobMenu.style.paddingTop='5px'
   drobMenu.style.height='auto'
@@ -190,12 +191,42 @@ if (swichTurn1 == 0) {
   switchBall1.style.marginLeft = '15px'
   switchBall1.style.marginRight = '0px'
   switchBall1.style.backgroundColor = 'blue'
+  loadTheme()
   swichTurn1 += 1
+  
 } 
 else {
   switchBall1.style.marginLeft = '0px'
   switchBall1.style.marginRight = '15px'
   switchBall1.style.backgroundColor = 'red'  
+  loadTheme()
   swichTurn1 -= 1
 }
+}
+
+function logb(){
+    document.querySelector('.float').style.display= 'flex'
+    if (drobOpen == 1) {
+      drobDown()
+    }
+}
+
+function loter(){
+  if (form == 1) {
+    form -= 1
+    document.querySelector('.login').style.display='flex'
+    document.querySelector('.register').style.display='none'
+  } else {
+    form += 1
+    document.querySelector('.login').style.display='none'
+    document.querySelector('.register').style.display='flex'
+  }
+}
+
+function cloter(){
+  document.querySelector('.login').style.display='none'
+  document.querySelector('.register').style.display='none'
+  document.querySelector('.float').style.display='none'
+  form = 1
+  
 }
