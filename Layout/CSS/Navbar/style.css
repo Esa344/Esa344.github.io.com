@@ -12,7 +12,7 @@ header{
   position: fixed;
   top: 0;
   width: 100%;
-  height: 10vh;
+  height: auto;
   color: white;
 }
 marquee{
@@ -24,7 +24,7 @@ marquee{
   font-weight: bold;
 }
 header div#nav{
-  padding: 0px 15px;
+  padding: 15px 15px;
   top: 0;
   height: auto;
   width: 100vw;
@@ -32,19 +32,22 @@ header div#nav{
   align-items: center;
   justify-items: space-evenly;
   transition: 800ms;
+  margin-top: 0px;
+  z-index: 2;
+
 }
 header div.down{
   border: none;
   padding-top: 0px;
   background-color: black;
   width: 100vw;
-  height: auto;
+  height: 0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 0px;
-  margin-top: -40px;
+  margin-top: -0px;
   margin-left: auto;
   margin-right: 0px;
   transition: 800ms;
@@ -80,6 +83,7 @@ div.down div.item{
   align-items: center;
   opacity: 0;
   transition: 1s;
+  z-index: 2;
 }
 div.accr{
   height: 25px;
@@ -119,8 +123,6 @@ div.boxbuble{
   height: 0px;
   display: flex;
   justify-content: center;
-  margin-top: auto;
-  z-index: -1;
 }
 header div.buble{
   background-color: black;
@@ -128,12 +130,14 @@ header div.buble{
   height: 50px;
   width: 50px;
   display: flex;
+  margin-top: -40px;
   align-items: center;
   justify-content: center;
   position: fixed;
   transition: 800ms;
+  z-index: 1;
 }
-header div.buble .dbutton{
+ .dbutton{
   transform: rotate(135deg);
   height: 6px;
   width: 6px;
@@ -144,7 +148,6 @@ header div.buble .dbutton{
   margin: auto;
   background-color: transparent;
   transition: 1s;
-  display: none;
 }
 header h1{
   margin: 0px;

@@ -19,6 +19,7 @@ const dbutton = document.getElementById('dbutton')
 const sdbutton = document.getElementById('sdbutton')
 const item1 = document.getElementById('item1')
 const switchBall1 = document.getElementById('switchBall1')
+const header = document.getElementById('header')
 
 let lastItem = animHome
 let lastText = textHome
@@ -136,8 +137,8 @@ function drobDown(){
     drobMenu.style.borderColor = 'rgba(0,0,0,0)'
     drobMenu.style.paddingBottom = '0px'
     drobMenu.style.paddingTop = '0px'
-    drobMenu.style.height = '0px'
-    drobMenu.style.marginTop='-70px'
+    drobMenu.style.height = '-70px'
+    drobMenu.style.marginTop='-50px'
     src.style.opacity = '0'
     src.style.height = '0px'
     drobItem.style.opacity = '0'
@@ -147,6 +148,7 @@ function drobDown(){
     sdbutton.style.transform = 'rotate(45deg)'
     item1.style.opacity='0'
     item1.style.height='0px'
+    buble.style.marginTop='-25px'
     drobOpen -= 1
     if (sdOpen == 1){
       sdOpen -= 1
@@ -169,6 +171,8 @@ function drobDown(){
   dbutton.style.transform = 'rotate(315deg)'
   item1.style.opacity='1'
   item1.style.height='30px'
+  buble.style.marginTop='-15px'
+
   drobOpen += 1
   }
 }
