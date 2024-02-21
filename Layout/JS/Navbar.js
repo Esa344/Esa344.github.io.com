@@ -204,12 +204,6 @@ else {
 }
 }
 
-function logb(){
-    document.querySelector('.float').style.display= 'flex'
-    if (drobOpen == 1) {
-      drobDown()
-    }
-}
 
 function loter(){
   if (form == 1) {
@@ -221,6 +215,10 @@ function loter(){
     document.querySelector('.login').style.display='none'
     document.querySelector('.register').style.display='flex'
   }
+      document.querySelector('.float').style.display= 'flex'
+    if (drobOpen == 1) {
+      drobDown()
+    }
 }
 
 function cloter(){

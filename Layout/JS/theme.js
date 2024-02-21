@@ -80,10 +80,10 @@ function theme(){styleTag.innerHTML=`
    color: ${firstColor} !important;
   }
   `
-  document.querySelector('#forum').src=`/drawable/.Navbar/${dl}/forum.png`
-  document.querySelector('#shop').src=`/drawable/.Navbar/${dl}/shop.png`
-  document.querySelector('#home').src=`/drawable/.Navbar/${dl}/home.png`
-  document.querySelector('#troli').src=`/drawable/.Navbar/${dl}/troli.png`
-  document.querySelector('#galeri').src=`/drawable/.Navbar/${dl}/galeri.png`
+  document.querySelector('#forum').src=`/drawable/Navbar/${dl}/forum.png`
+  document.querySelector('#shop').src=`/drawable/Navbar/${dl}/shop.png`
+  document.querySelector('#home').src=`/drawable/Navbar/${dl}/home.png`
+  document.querySelector('#troli').src=`/drawable/Navbar/${dl}/troli.png`
+  document.querySelector('#galeri').src=`/drawable/Navbar/${dl}/galeri.png`
   
 }  

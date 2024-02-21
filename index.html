@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title></title>
-  <link rel="stylesheet" href="/.Layout/.CSS/.Navbar/style.css">
+  <link rel="stylesheet" href="/Layout/CSS/Navbar/style.css">
   <link rel="stylesheet" href="style.css">
   <style id="styleTag"></style>
 </head>
@@ -16,7 +16,7 @@
     <marquee behavior="" direction="left" scrollamount="17">bohong deng:v</marquee>
     <div id="nav">
       <h1>mangaK</h1>
-      <h4 id="login" onclick="loter() & logb()">Masuk</h4>
+      <h4 id="login" onclick="loter() ">Masuk</h4>
     </div>
     <marquee behavior="" direction="right" scrollamount="17">bohong deng:v</marquee>
     <div class="down" id="drobDown">
@@ -44,28 +44,29 @@
     </div>
 
   </header>
+  <h1>eza</h1>
   <main id="main-content" />
   <footer>
     <nav>
       <ul>
         <li onclick="forum() & loadContent('/page/forum/index.html')">
-          <img src="/drawable/.Navbar/light/forum.png" id="forum">
+          <img src="/drawable/Navbar/light/forum.png" id="forum">
           <h3 id="textForum">forum</h3>
         </li>
         <li onclick="shop() & loadContent('/page/shop/index.html') ">
-          <img src="/drawable/.Navbar/light/shop.png" id="shop">
+          <img src="/drawable/Navbar/light/shop.png" id="shop">
           <h3 id="textShop">Shop</h3>
         </li>
         <li onclick="home() & loadContent('/page/home/index.html')">
-          <img src="/drawable/.Navbar/light/home.png" id="home">
+          <img src="/drawable/Navbar/light/home.png" id="home">
           <h3 id="textHome">Home</h3>
         </li>
         <li onclick="troli() & loadContent('/page/troli/index.html')">
-          <img src="/drawable/.Navbar/light/troli.png" id="troli">
+          <img src="/drawable/Navbar/light/troli.png" id="troli">
           <h3 id="textTroli">troli</h3>
         </li>
         <li onclick="galeri() & loadContent('/page/galeri/index.html')">
-          <img src="/drawable/.Navbar/light/galeri.png" id="galeri">
+          <img src="/drawable/Navbar/light/galeri.png" id="galeri">
           <h3 id="textGaleri">Gallery</h3>
         </li>
       </ul>
@@ -90,10 +91,28 @@
         <a onclick="loter()">I have an account</a>
     </form>   
 </div>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
-  <script src="/.system/layout.js"></script>
-  <script src="/.Layout/.JS/Navbar.js"></script>
-  <script src="/.Layout/.JS/theme.js"></script>
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCimUk5k5oO8cRwm5peb68lJbs7V24Zv-k",
+    authDomain: "my-ezaco.firebaseapp.com",
+    projectId: "my-ezaco",
+    storageBucket: "my-ezaco.appspot.com",
+    messagingSenderId: "635087449985",
+    appId: "1:635087449985:web:c0f9e2a755b5dec91b4280"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+  <script src="/system/layout.js"></script>
+  <script src="/Layout/JS/Navbar.js"></script>
+  <script src="/Layout/JS/theme.js"></script>
 </body>
 
 </html>
