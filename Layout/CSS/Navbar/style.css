@@ -34,6 +34,7 @@ header div#nav{
   transition: 800ms;
   margin-top: 0px;
   z-index: 2;
+  margin-top: 15px;
 
 }
 header div.down{
