@@ -1,12 +1,14 @@
 const styleTag = document.getElementById('styleTag')
 let firstColor = 'white';
-let secondColor = 'black';
+let secondColor = '#ABD5FF';
+let textColor = '#303030'
 let dl;
 
 function loadTheme(){
   if (swichTurn1 == 1) {
-    firstColor = 'white'
-    secondColor = 'black'
+    firstColor = '#F1F8FF'
+    secondColor = '#ABD5FF'
+    textColor = '#303030'
     dl = 'light'
   } else {
     firstColor = 'black'
@@ -16,6 +18,9 @@ function loadTheme(){
   theme()
 }
 function theme(){styleTag.innerHTML=`
+*{
+  color: ${textColor} !important;
+}
   body{
     background-color: ${firstColor};
     color : ${secondColor};

@@ -7,15 +7,15 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: white;
+  background-color: #F1F8FF;
 }
 header{
-  background-color: black;
+  background-color: #ABD5FF;
   position: fixed;
   top: 0;
   width: 100%;
   height: auto;
-  color: white;
+  color: #303030;
 }
 marquee{
   padding: 0px;
@@ -34,8 +34,6 @@ header div#nav{
   align-items: center;
   justify-items: space-evenly;
   transition: 800ms;
-  margin-top: 0px;
-  z-index: 2;
   margin-top: 5px;
   z-index: 4;
 
@@ -43,7 +41,6 @@ header div#nav{
 header div.down{
   border: none;
   padding-top: 0px;
-  background-color: black;
   width: 100vw;
   height: 0px;
   display: flex;
@@ -63,14 +60,14 @@ div.down input.src{
   width: 96vw;
   border-radius: 10px;
   border: none;
-  color: rgba(255, 255, 255, 0.7);
+  color: #303030;
   padding-left: 10px;
   opacity: 0;
   transition: 1s;
   margin-bottom: 5px;
 }
 div.down input.src::placeholder{
-  color:white;
+  color:#303030;
   opacity: 0.6;
 }
 div.down div.item{
@@ -79,7 +76,7 @@ div.down div.item{
   width: 95vw;
   border-radius: 10px;
   border: none;
-  color: rgba(255, 255, 255, 0.7);
+  color:#303030;
   padding-left: 7px;
   padding-right: 7px;
   margin-bottom: 5px;
@@ -92,7 +89,7 @@ div.down div.item{
 div.accr{
   height: 25px;
   width: 5px;
-  background-color:white;
+  background-color:#303030;
   border-radius: 10px;
   margin-right: 5px;
 }
@@ -118,6 +115,7 @@ div.subdrop{
   transition: 1s;
   display: none;
   margin-bottom: 5px;
+  color: #303030;
 }
 div.subdrop h6{
   margin: 10px;
@@ -129,7 +127,7 @@ div.boxbuble{
   justify-content: center;
 }
 header div.buble{
-  background-color: black;
+  background-color: #ABD5FF;
   border-radius: 100%;
   height: 50px;
   width: 50px;
@@ -184,7 +182,7 @@ header h4{
   margin-left: auto;
 }
 .swichBall{
-  background-color: red;
+  background-color: #ABD5FF;
   margin: 0px;
   padding: 0px;
   margin-right: 15px;
@@ -213,7 +211,7 @@ nav {
   justify-content: center;
   align-items: center;
   position: fixed;
-  background-color: black;
+  background-color: #ABD5FF;
   margin-top: -10vh;
   border-radius: 20px;
   width: auto;
@@ -221,7 +219,7 @@ nav {
   transition: 800ms;
 }
 nav img{
-  background-color: black;
+  background-color: #ABD5FF;
   width: 30px;
   padding: 15px 15px 10px 15px;
   border-radius: 25px;
@@ -229,7 +227,7 @@ nav img{
 }
 h3{
   margin-top: -5px;
-  color: White;
+  color: #303030;
   display: none;
 }
 nav ul {
@@ -250,7 +248,7 @@ nav ul {
  justify-content: center;
 }
 .float form{
-  background-color: black;
+  background-color: #ABD5FF;
   display: flex;
   flex-direction: column;
   height: 300px;
@@ -260,12 +258,13 @@ nav ul {
   border-radius: 50px;
 }
 form h1{
-  color: white;
+  color: #303030;
   margin-top: -20px;
   margin-bottom: 20px;
 }
 form h1.x{
   position: absolute;
+  color: #303030;
   margin-left: 50%;
   margin-top: -50%;
 }
@@ -276,13 +275,14 @@ form input{
   width: 200px;
   border-radius: 20px;
   border: solid;
-  border-color: black
+  border-color: #303030;
+  background-color: #ABD5FF;
   
 }
 input.submit{
   background-color: transparent;
-  color: white;
-  border: solid;
+  color: #303030;
+  border: solid #303030;
   height: auto;
   width: auto;
   font-size: 18px;
@@ -291,7 +291,7 @@ input.submit{
   padding: 0px 20px;
 }
 form a{
-  color: white;
+  color: ;
   font-size: 15px;
   margin-top: 10px;
   margin-bottom: -10px;
