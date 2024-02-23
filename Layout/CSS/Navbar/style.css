@@ -124,6 +124,7 @@ div.boxbuble{
   height: 0px;
   display: flex;
   justify-content: center;
+  margin-top: +200px;
 }
 header div.buble{
   background-color: black;
