@@ -30,8 +30,8 @@ function theme(){styleTag.innerHTML=`
     color:${firstColor}; 
   }
   #login{
-    background-color:${firstColor}; 
-    color:${secondColor}; 
+    border-color:${firstColor};
+    color:${firstColor}; 
   }
   .down{
     background-color:${secondColor} !important; 
