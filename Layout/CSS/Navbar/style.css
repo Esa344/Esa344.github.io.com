@@ -124,7 +124,6 @@ div.boxbuble{
   height: 0px;
   display: flex;
   justify-content: center;
-  margin-top: +200px;
 }
 header div.buble{
   background-color: black;
@@ -143,6 +142,7 @@ header div.buble{
   transform: rotate(135deg);
   height: 6px;
   width: 6px;
+  border-color: white;
   border: solid;
   border-left: none;
   border-bottom: none;
