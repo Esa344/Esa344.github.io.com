@@ -35,7 +35,7 @@ function theme(){styleTag.innerHTML=`
     color:${firstColor}; 
   }
   #login{
-    border-color:${firstColor};
+    border-color:${textColor};
     color:${firstColor}; 
   }
   .down{
