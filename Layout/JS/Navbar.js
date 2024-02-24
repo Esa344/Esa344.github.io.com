@@ -202,7 +202,7 @@ if (swichTurn1 == 0) {
 else {
   switchBall1.style.marginLeft = '0px'
   switchBall1.style.marginRight = '15px'
-  switchBall1.style.backgroundColor = 'red'  
+  switchBall1.style.backgroundColor = '#ABD5FF'  
   loadTheme()
   swichTurn1 -= 1
 }

@@ -43,16 +43,16 @@ function theme(){styleTag.innerHTML=`
     border-color: ${firstColor} !important;
   }
   .src{
-    color: ${firstColor} !important; 
+    color: ${textColor} !important; 
   }
   .src::placeholder {
-    color: ${firstColor}!important;
+    color: ${textColor}!important;
   }
   .item{
     color: ${firstColor} !important; 
   }
   .accr{
-    background-color: ${firstColor} !important; 
+    background-color: ${textColor} !important; 
   }
   .subdrop{
     color: ${firstColor} !important; 
@@ -61,7 +61,7 @@ function theme(){styleTag.innerHTML=`
     background-color: ${secondColor} !important; 
   }
   .dbutton{
-    border-color: ${firstColor} !important;
+    border-color: ${textColor} !important;
   }
   nav{
     background-color: ${secondColor} !important; 
